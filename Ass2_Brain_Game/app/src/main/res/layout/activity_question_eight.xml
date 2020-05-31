@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".question1">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/levelicon"
+        android:onClick="Play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/hinticon"
+        android:onClick="goHint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="238dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/baloo_da"
+        android:includeFontPadding="false"
+        android:text="LEVEL O8"
+        android:textColor="@android:color/background_dark"
+        android:textDirection="firstStrong"
+        android:textIsSelectable="true"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button9" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="302dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="32dp"
+        android:autoText="true"
+        android:text="@string/question_eight"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="111dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:hint="Answer"
+        android:inputType="textPersonName"
+        android:shadowColor="#171616"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/tertiary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="181dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/submitbtn"
+        android:onClick="submit"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="160dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/question_eight" />
+
+    <ImageView
+        android:id="@+id/congratzview"
+        android:layout_width="407dp"
+        android:layout_height="688dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gongratzlogoaa" />
+
+    <ImageView
+        android:id="@+id/failview"
+        android:layout_width="407dp"
+        android:layout_height="688dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faillogo" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="168dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="188dp"
+        android:background="@android:color/transparent"
+        android:onClick="Play"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/congratzview"
+        app:layout_constraintEnd_toEndOf="@+id/congratzview"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="@+id/congratzview" />
+
+    <Button
+        android:id="@+id/restartBtn"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="188dp"
+        android:background="@android:color/transparent"
+        android:onClick="Restart"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/congratzview"
+        app:layout_constraintEnd_toEndOf="@+id/congratzview"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="@+id/congratzview" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="180dp"
+        android:background="@android:color/transparent"
+        android:onClick="Home"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/congratzview"
+        app:layout_constraintEnd_toEndOf="@+id/congratzview"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="@+id/congratzview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

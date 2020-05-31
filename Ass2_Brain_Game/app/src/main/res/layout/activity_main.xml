@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baground"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/plBtn"
+        android:layout_width="225dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="472dp"
+        android:background="@drawable/mplay"
+        android:onClick="play"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stBtn"
+        android:layout_width="56dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/mseting"
+        android:onClick="setting"
+        app:layout_constraintStart_toStartOf="@+id/plBtn"
+        app:layout_constraintTop_toBottomOf="@+id/plBtn" />
+
+    <Button
+        android:id="@+id/scBtn"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/mhscore"
+        android:onClick="score"
+        app:layout_constraintStart_toEndOf="@+id/stBtn"
+        app:layout_constraintTop_toBottomOf="@+id/plBtn" />
+
+    <Button
+        android:id="@+id/shBtn"
+        android:layout_width="56dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/mshop"
+        android:onClick="shop"
+        app:layout_constraintEnd_toEndOf="@+id/plBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/scBtn"
+        app:layout_constraintTop_toBottomOf="@+id/plBtn" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/volume"
+        android:onClick="stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="274dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bmlogo" />
+
+    <ImageView
+        android:id="@+id/shopImgView"
+        android:layout_width="449dp"
+        android:layout_height="813dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shop" />
+
+    <Button
+        android:id="@+id/accBtn"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="448dp"
+        android:background="@android:color/transparent"
+        android:onClick="shopAccept"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

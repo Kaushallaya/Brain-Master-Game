@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baground"
+    tools:context=".level">
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/volume"
+        android:onClick="stopMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/about"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lvlBtn1"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
+        android:background="@android:color/transparent"
+        android:onClick="goQuestion1"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/lvlBtn2"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="92dp"
+        android:background="@android:color/transparent"
+        android:onClick="goQuestion2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/lvlBtn3"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="92dp"
+        android:background="@android:color/transparent"
+        android:onClick="goQuestion3"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/lvlBtn4"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="92dp"
+        android:background="@android:color/transparent"
+        android:onClick="goQuestion4"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/lvlBtn5"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="172dp"
+        android:background="@android:color/transparent"
+        android:onClick="goQuestion5"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/lvlBtn6"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="172dp"
+        android:background="@android:color/transparent"
+        android:onClick="goQuestion6"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/lvlBtn7"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="172dp"
+        android:background="@android:color/transparent"
+        android:onClick="goQuestion7"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/lvlBtn8"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="176dp"
+        android:background="@android:color/transparent"
+        android:onClick="goQuestion8"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/HomBtn"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:onClick="Home"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/shBtn"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:onClick="goShop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/plyBtn"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:onClick="goQuestion1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="387dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/levelbg" />
+
+    <ImageView
+        android:id="@+id/shImgView"
+        android:layout_width="445dp"
+        android:layout_height="831dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shop" />
+</androidx.constraintlayout.widget.ConstraintLayout>
